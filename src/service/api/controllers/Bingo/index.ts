@@ -1,15 +1,19 @@
-interface Card {
+export interface Card {
   _id: number;
   fields: Array<Array<number>>;
 }
 
 class Bingo {
-  cards: Array<Card> = []
-  numbers: Array<number> = []
-  limitColumns = 5
-  totalField = 15
-  min = 1
-  max = 75
+  private cards: Array<Card> = []
+  private numbers: Array<number> = []
+  private limitColumns = 5
+  private totalField = 15
+  private min = 1
+  private max = 75
+
+  get getCards() {
+    return this.cards
+  }
 
   generateRandomNumber() {
     return Math.floor(Math.random() * (this.max - this.min + 1)) + this.min

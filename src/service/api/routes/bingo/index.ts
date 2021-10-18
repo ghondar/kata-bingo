@@ -49,7 +49,7 @@ router.get('/create/bingo-card', validateBingo, (req, res) => {
 
 router.get('/cards', validateBingo, (req, res) => {
   try {
-    res.json(message.sendData(bingo.cards))
+    res.json(message.sendData({ cards: bingo.getCards }))
   } catch (err: any) {
     res.status(500)
     res.json(message.error(err.message))

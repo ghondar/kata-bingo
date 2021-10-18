@@ -1,4 +1,4 @@
-# Kata Bingo
+# Kata Bingo Backend
 
 
 ## Development mode
