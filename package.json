@@ -25,7 +25,7 @@
     ]
   },
   "dependencies": {
-    "@swc/cli": "0.1.51",
+    "@ghondar/cli": "0.1.27",
     "@swc/core": "1.2.99",
     "@swc/register": "0.1.7",
     "axios": "0.23.0",
